@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+    min-height: 1vh;
+    padding: 1%;
+    display: flex;
+}
+
+.searchbar {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 60px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.button {
+    width: 100px;
+    border-radius: 60px;
+    height: 40px;
+    background-color: white;
+}
