@@ -13,9 +13,9 @@
     margin-bottom: 1rem;
     margin-right: 2px;
     margin-left: 2px;
-    background-color: rgb(255, 245, 225);
+    background-color: #F7F6DC;
     text-decoration: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.478), 0 6px 20px 0 rgba(0, 0, 0, 0.626);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .imagen {

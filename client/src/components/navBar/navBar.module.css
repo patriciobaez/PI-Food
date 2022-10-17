@@ -1,27 +1,33 @@
+.background{
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+  background-color: #51C4D3;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  width: 100%;
+}
+
+.navlink {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 140px;
+    margin-right: 5px;
+    padding-right: 4px;
+}
+
 .button{
   border-style: none;
   background-color: transparent;
-  color:white;
-  font-size: 27px;
+  color:black;
+  font-size: 20px;
   font-family: Lato, Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition-duration: 0.3s;
 }
 
 .button:hover{
-  color:wheat;
   cursor: pointer;
   transition: 0.1s;
   transform: scale(1.03);
-}
-
-.background{
-  display: flex;
-  align-items: space-around;
-  height: 150px;
-  background-color: black;
-}
-
-.navlink {
-  height: 40px;
 }

@@ -43,29 +43,26 @@ const RutaPrincipal = () => {
 
     return (
         <div>
-            <div className={styles.navBarWrapper} >
-                <NavBar></NavBar>
-                <SearchBar></SearchBar>
+            <SearchBar></SearchBar>
+            <div className={styles.filtersContainer} >
+                <select className={styles.select} onChange={e => handleFilteredDiets(e)}>
+                    <option value="">Select a diet</option>
+                    {diets?.map(diet => {
+                        return (<option value={diet.name}>{diet.name}</option>)
+                        })
+                    }
+                </select>
+
+                <select className={styles.select} defaultValue="asc" onChange={(event) => handleOrder(event)}>
+                    <option value="nameDes">By name A-Z</option>
+                    <option value="nameAsc">By name Z-A</option>
+                    <option value="scoreAsc">Ascending health score</option>
+                    <option value="scoreDes">Descending health score</option>
+                </select>
             </div>
-
-            <select onChange={e => handleFilteredDiets(e)}>
-                <option value="">Select a diet</option>
-                {diets?.map(diet => {
-                    return (<option value={diet.name}>{diet.name}</option>)
-                    })
-                }
-            </select>
-
-            <div className={styles.order} >
-              <select defaultValue="asc" onChange={(event) => handleOrder(event)}>
-                <option value="nameDes">By name A-Z</option>
-                <option value="nameAsc">By name Z-A</option>
-                <option value="scoreAsc">Ascending health score</option>
-                <option value="scoreDes">Descending health score</option>
-              </select>
+            <div className={styles.searchbar} >
+                <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} recipesLength={recipes.length} />
             </div>
-
-            <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} recipesLength={recipes.length} />
             <div className={styles.card}>
                 {recipes
                 .slice(
@@ -77,7 +74,9 @@ const RutaPrincipal = () => {
                     </Link>
                 ))}
             </div>
-            <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} recipesLength={recipes.length}/>
+            <div className={styles.searchbar} >
+                <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} recipesLength={recipes.length}/>
+            </div>
         </div>
     )
 }

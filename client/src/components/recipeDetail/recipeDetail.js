@@ -18,7 +18,6 @@ const RecipeDetail = () => {
 
     return (
         <div className={styles.box} >
-            <NavBar></NavBar>
             {
                 (recipeDetail.length === 0) ? 
                     <div>

@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
     grid-auto-rows: 500px;
-    margin-left: 5rem;
+    margin-left: 1.6rem;
     margin-bottom: 100px
 }
 
@@ -17,10 +17,6 @@ a {
 .box {
     display: flex;
     align-items: center;
-}
-
-.order {
-    color: white;
 }
 
 select {
@@ -40,4 +36,18 @@ select {
 .navBarWrapper {
     display: flex;
     align-items: space-around;
+}
+
+.select {
+    background-color: white;
+}
+
+.filtersContainer {
+    display: flex;
+    margin-top: 30px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: flex-end;
 }

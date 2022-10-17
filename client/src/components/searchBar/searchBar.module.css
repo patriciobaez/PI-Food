@@ -1,21 +1,26 @@
 .container {
-    width: 100%;
+    display: flex;
+    width: 400px;
+    height: 40px;
     min-height: 1vh;
     padding: 1%;
-    display: flex;
 }
 
 .searchbar {
     width: 100%;
     max-width: 500px;
     border-radius: 60px;
+    border-width: 0px;
     padding: 10px 20px;
     background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .button {
     width: 100px;
     border-radius: 60px;
+    border-width: 0px;
     height: 40px;
     background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }

@@ -104,14 +104,13 @@ const CreateRecipe = () => {
     }
 
     return (
-        <div>
-            <NavBar></NavBar>
+        <div className={styles.container} >
             <h1 className={styles.title} >Add a new recipe:</h1>
             <form onSubmit={(e) => handleOnSubmit(e)}>
                 <div className={styles.inputConainer} >
                     <label>Name </label>
-                     <input className={styles.input} name='title' type='text' value={post.title} id='title' onChange={(e) => handleChange(e)} placeholder='Enter a name' ></input>
-                     {errors.title ? <p>{errors.title}</p> : null}
+                    <input className={styles.input} name='title' type='text' value={post.title} id='title' onChange={(e) => handleChange(e)} placeholder='Enter a name' ></input>
+                    {errors.title ? <p>{errors.title}</p> : null}
                 </div>
                 <div>
                     <label>Health score </label>

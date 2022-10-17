@@ -14,6 +14,11 @@ const NavBar = () => {
         Create Recipe
       </button>
     </NavLink>
+    <NavLink to="/about" className={styles.navlink} >
+      <button className={styles.button}>
+        About Us
+      </button>
+    </NavLink>
   </div>
   );
 }
